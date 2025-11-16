@@ -142,4 +142,3 @@ The system also continuously streams telemetry data, which can be visualized in 
 <!-- end list -->
 
 ```
-```
