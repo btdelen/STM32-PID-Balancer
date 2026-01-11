@@ -1,5 +1,10 @@
 # STM32 PID Ball-on-Beam Balancer
 
+![STM32](https://img.shields.io/badge/MCU-STM32F103C8T6-blue.svg)
+![C](https://img.shields.io/badge/Language-C-green.svg)
+![PID](https://img.shields.io/badge/Control-PID-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 This project is a single-axis ball balancing system built using an STM32F103C8T6 (Blue Pill) microcontroller. The system utilizes a **PID (Proportional-Integral-Derivative)** control algorithm to keep a ball balanced on a beam.
 
 The ball's position is read by a **Sharp GP2Y0A60SZ0F** analog IR distance sensor, and the beam's tilt is controlled by an **MG996R** servo motor.
@@ -12,6 +17,16 @@ The ball's position is read by a **Sharp GP2Y0A60SZ0F** analog IR distance senso
 * **Distance Sensor:** Sharp GP2Y0A60SZ0F (10-150cm, Analog)
 * **Actuator:** MG996R High Torque Servo Motor
 * **Development Rig:** Breadboard, custom-etched PCB, and jumper wires.
+
+### 📌 Wiring Diagram
+
+| STM32 Pin | Connection | Notes |
+|-----------|------------|-------|
+| PA0 | Sharp Sensor OUT | ADC Input |
+| PA8 | MG996R Signal (Orange) | PWM Output (TIM1_CH1) |
+| 5V | Servo VCC (Red) | External 5V recommended |
+| GND | Servo GND (Brown) + Sensor GND | Common ground |
+| 3.3V | Sharp Sensor VCC | Sensor power |
 
 ## 💻 Software & Tools
 
@@ -142,3 +157,11 @@ The system also continuously streams telemetry data, which can be visualized in 
 <!-- end list -->
 
 ```
+
+---
+
+## 👤 Author
+
+Created by [@btdelen](https://github.com/btdelen)
+
+⭐ Star this repository if you find it useful!

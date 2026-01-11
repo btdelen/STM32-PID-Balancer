@@ -1,0 +1,48 @@
+# STM32CubeIDE Generated Files
+Debug/
+Release/
+*.o
+*.d
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.su
+
+# IDE Settings (user-specific)
+.settings/
+.metadata/
+*.launch
+
+# Build artifacts
+build/
+Binaries/
+
+# STM32CubeMX Backup Files
+*.ioc.bak
+*.ioc~
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor specific
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Backup directories
+Backup/
+backup/
